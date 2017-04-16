@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cheshire-task1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/less.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+
+	<div id="myModal" class="modal fade">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	        <h4 class="modal-title">Корзина</h4>
+	      </div>
+	      <div class="modal-body">
+				<img src="image/Layer 10.png" class="img-fluid" />
+				<div class="modal-body-content">
+					<div class="modal-body-title">
+						<p></p>
+					</div>
+					<div class="modal-body-cost">
+						Стоимость <span><a></a>.</span>
+					</div>
+					<div class="modal-body-count">
+						Количество, шт <a><span class="down-count">-</span><span class="count-show"></span><span class="up-count">+</span></a>
+					</div>
+				</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<div class="modal-footer-total-cost">
+	      		Итого: <span></span> Br
+	      	</div>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Вернуться в каталог</button>
+	        <button type="button" class="btn btn-primary">Оформить заказ</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-3 ">
+			<nav>
+				<h1>Категории</h1>
+				<ul class="categories-product list-group">
+					<li class="list-group-item"><a>Сухие корма</a>
+						<ul class="subcategories-product list-group">
+							<li class="list-group-item"><a>Для щенков</a></li>
+							<li class="list-group-item"><a>Для взврослых</a></li>
+							<li class="list-group-item"><a>Для пожилых</a></li>
+						</ul>
+					</li>
+					<li class="list-group-item"><a>Корма</a></li>
+					<li class="list-group-item"><a>Лакомства</a></li>
+					<li class="list-group-item"><a>Ошейники, поводки, намордники</a></li>
+					<li class="list-group-item"><a>Миски, контейнеры</a></li>
+					<li class="list-group-item"><a>Лежаки, домики</a></li>
+					<li class="list-group-item"><a>Одежда</a></li>
+					<li class="list-group-item"><a>Переноски, транспортировка</a></li>
+					<li class="list-group-item"><a>Клетки, будки, манежи, вольеры</a></li>
+					<li class="list-group-item"><a>Игрушки</a></li>
+					<li class="list-group-item"><a>Груминг</a></li>
+					<li class="list-group-item"><a>Косметика и средства гигиены</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<section>
+						<div class="image-product">
+							<img src="image/Layer 10.png" class="img-fluid" />
+						</div>	
+						<div class="content-product">
+							<div class="content-product-title">
+								<a>Acana Wild Prairie cat and dog</a>
+							</div>
+							<div class="content-product-subtitle">
+								Беззерновой корм с курицей для собак корм с курицей
+							</div>
+						</div>
+						<div class="selected-cost-product">
+							<div class="selected-cost-placeholder">
+                                <a><span class="left-placeholder">100 000 руб</span><span class="right-placeholder">0.34 кг</span></a><img src="image/drop_dark.svg">
+                            </div>
+                            <div class="drop-list">
+                            	<div class="triangle"></div>
+                            	<ul class="selected-list list-group">
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">100 000 руб</span><span class="right-list">0.34 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">480 000 руб</span><span class="right-list">2.42 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">950 000 руб</span><span class="right-list">6.8 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">1 650 000 руб</span><span class="right-list">12 кг</span></a>
+	                                </li>
+                            	</ul>
+                            </div>  
+						</div>
+                        <div class="bottom-button">
+                        	<a class="cart-button">В корзину</a>
+                        	<a class="read-more-botton">Подробнее</a>
+                        </div>  
+					</section>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<section>
+						<div class="image-product">
+							<img src="image/Layer 10.png" class="img-fluid" />
+						</div>	
+						<div class="content-product">
+							<div class="content-product-title">
+								<a>Acana Wild Prairie dog Wild Prairie dog</a>
+							</div>
+							<div class="content-product-subtitle">
+								Беззерновой корм с курицей для собак корм с курицей
+							</div>
+						</div>
+						<div class="selected-cost-product">
+							<div class="selected-cost-placeholder">
+                                <a><span class="left-placeholder">100 000 руб</span><span class="right-placeholder">0.34 кг</span></a><img src="image/drop_dark.svg">
+                            </div>
+                            <div class="drop-list">
+                            	<div class="triangle"></div>
+                            	<ul class="selected-list list-group">
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">100 000 руб</span><span class="right-list">0.34 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">480 000 руб</span><span class="right-list">2.42 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">950 000 руб</span><span class="right-list">6.8 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">2 650 000 руб</span><span class="right-list">12 кг</span></a>
+	                                </li>
+                            	</ul>
+                            </div>
+						</div>
+						<div class="bottom-button">
+                        	<a class="cart-button">В корзину</a>
+                        	<a class="read-more-botton">Подробнее</a>
+                        </div>  
+					</section>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<section>
+						<div class="image-product">
+							<img  src="image/Layer 10.png" class="img-fluid"/>
+						</div>	
+						<div class="content-product">
+							<div class="content-product-title">
+								<a>Ami Play Crazy</a>
+							</div>
+							<div class="content-product-subtitle">
+								Лежак овальный, размер XS
+							</div>					
+						</div>
+						<div class="selected-cost-product">
+							<div class="selected-cost-placeholder">
+                                <a><span class="left-placeholder">100 000 руб</span><span class="right-placeholder">0.34 кг</span></a><img src="image/drop_dark.svg">
+                            </div>
+                            <div class="drop-list">
+                            	<div class="triangle"></div>
+                            	<ul class="selected-list list-group">
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">100 000 руб</span><span class="right-list">0.34 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">480 000 руб</span><span class="right-list">2.42 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">950 000 руб</span><span class="right-list">6.8 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">3 650 000 руб</span><span class="right-list">12 кг</span></a>
+	                                </li>
+                            	</ul>
+                            </div>
+						</div>
+						<div class="bottom-button">
+                        	<a class="cart-button">В корзину</a>
+                        	<a class="read-more-botton">Подробнее</a>
+                        </div>  
+					</section>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<section>
+						<div class="image-product">
+							<img  src="image/Layer 10.png" class="img-fluid"/>
+						</div>	
+						<div class="content-product">
+							<div class="content-product-title">
+								<a>Acana Wild Prairie cat and dog</a>
+							</div>
+							<div class="content-product-subtitle">
+								Беззерновой корм с курицей для собак корм с курицей
+							</div>	
+						</div>
+						<div class="selected-cost-product">
+							<div class="selected-cost-placeholder">
+                                <a><span class="left-placeholder">100 000 руб</span><span class="right-placeholder">0.34 кг</span></a><img src="image/drop_dark.svg">
+                            </div>
+                            <div class="drop-list">
+                            	<div class="triangle"></div>
+                            	<ul class="selected-list list-group">
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">100 000 руб</span><span class="right-list">0.34 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">480 000 руб</span><span class="right-list">2.42 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">950 000 руб</span><span class="right-list">6.8 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">1 650 000 руб</span><span class="right-list">12 кг</span></a>
+	                                </li>
+                            	</ul>
+                            </div> 
+						</div>
+						<div class="bottom-button">
+                        	<a class="cart-button">В корзину</a>
+                        	<a class="read-more-botton">Подробнее</a>
+                        </div>  
+					</section>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<section>
+						<div class="image-product">
+							<img  src="image/Layer 10.png" class="img-fluid"/>
+						</div>	
+						<div class="content-product">
+							<div class="content-product-title">
+								<a>Acana Wild Prairie dog Wild Prairie dog</a>
+							</div>
+							<div class="content-product-subtitle">
+								Беззерновой корм с курицей для собак корм с курицей
+							</div>
+						</div>
+						<div class="selected-cost-product">
+							<div class="selected-cost-placeholder">
+                                <a><span class="left-placeholder">100 000 руб</span><span class="right-placeholder">0.34 кг</span></a><img src="image/drop_dark.svg">
+                            </div>
+                            <div class="drop-list">
+                            	<div class="triangle"></div>
+                            	<ul class="selected-list list-group">
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">100 000 руб</span><span class="right-list">0.34 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">480 000 руб</span><span class="right-list">2.42 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">950 000 руб</span><span class="right-list">6.8 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">1 650 000 руб</span><span class="right-list">12 кг</span></a>
+	                                </li>
+                            	</ul>
+                            </div>
+						</div>
+						<div class="bottom-button">
+                        	<a class="cart-button">В корзину</a>
+                        	<a class="read-more-botton">Подробнее</a>
+                        </div>  
+					</section>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<section>
+						<div class="image-product">
+							<img src="image/Layer 10.png" class="img-fluid" />
+						</div>	
+						<div class="content-product">
+							<div class="content-product-title">
+								<a>Ami Play Crazy</a>
+							</div>
+							<div class="content-product-subtitle">
+								Лежак овальный, размер XS
+							</div>
+						</div>
+						<div class="selected-cost-product">
+							<div class="selected-cost-placeholder">
+                                <a><span class="left-placeholder">100 000 руб</span><span class="right-placeholder">0.34 кг</span></a><img src="image/drop_dark.svg">
+                            </div>
+                            <div class="drop-list">
+                            	<div class="triangle"></div>
+                            	<ul class="selected-list list-group">
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">100 000 руб</span><span class="right-list">0.34 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">480 000 руб</span><span class="right-list">2.42 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">950 000 руб</span><span class="right-list">6.8 кг</span></a>
+	                                </li>
+	                                <li class="list-group-item">
+	                                    <a><span class="left-list">1 650 000 руб</span><span class="right-list">12 кг</span></a>
+	                                </li>
+                            	</ul>
+                            </div>
+						</div>
+						<div class="bottom-button">
+                        	<a class="cart-button">В корзину</a>
+                        	<a class="read-more-botton">Подробнее</a>
+                        </div>  
+					</section>
+				</div>
+			</div>		
+		</div>
+	</div>	
+</div>
+</body>
+</html>
